@@ -17,7 +17,7 @@ const Auth = () => {
 
     useEffect(() => {
         if(auth.isAuthenticated) navigate(next);
-    }, [auth.isAuthenticated]);
+    }, [auth.isAuthenticated, next]);
 
 
   return (
