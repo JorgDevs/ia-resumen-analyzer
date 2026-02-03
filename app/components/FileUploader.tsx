@@ -24,6 +24,8 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
 
     const file = acceptedFiles[0] || null;
 
+    
+
 
   return (
     <div className="w-full gradient-border">
@@ -32,8 +34,8 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
 
                 <div className="space-y-4 cursor-pointer">
                     {file ? (
-                        <div className="uploader-selected-file" onClick={(e) => e.stopPropagation()}>
-                            <img src="/images/pdf.png" alt="pdf" className="size-10" />
+                        <div className="uploader-selected-file" onClick={(e) => e.stopPropagation()}> 
+                                <img src="/images/pdf.png" alt="pdf" className="size-10" />                   
                             <div className="flex items-center space-x-3">
                                 <div>
                                     <p className="text-sm font-medium text-gray-700 truncate max-w-xs">
@@ -60,7 +62,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                                     Click to upload
                                 </span> or drag and drop
                             </p>
-                            <p className="text-lg text-gray-500">PDF {/* (max {formatSize(maxFileSize)}) */}</p>
+                            <p className="text-lg text-gray-500">PDF (max {formatSize(maxFileSize)})</p>
                         </div>
                     )}
                 </div>
