@@ -237,6 +237,54 @@ export const prepareInstructions = ({
   `You are an expert in ATS (Applicant Tracking System) and resume analysis.
   Please analyze and rate this resume and suggest how to improve it.
   The rating can be low if the resume is bad.
+
+  IMPORTANT:
+You MUST return a valid JSON object that matches EXACTLY the provided format.
+Do NOT omit any field.
+All score fields MUST be numbers between 0 and 100.
+If you cannot evaluate a section, return a score anyway based on best judgment.
+
+  Rules:
+- Every section MUST contain a "score" field.
+- No field can be null or undefined.
+- Tips arrays may be empty, but scores are mandatory.
+- Return ONLY JSON, no text, no explanations.
+
+You are a resume scoring engine.
+
+You are NOT allowed to change the structure.
+You are NOT allowed to add new fields.
+You are NOT allowed to rename fields.
+You are NOT allowed to remove fields.
+
+Return ONLY a valid JSON object that EXACTLY matches this structure:
+{
+  "overallScore": number,
+  "ATS": {
+    "score": number,
+    "tips": { "type": "good" | "improve", "tip": string }[]
+  },
+  "toneAndStyle": {
+    "score": number,
+    "tips": { "type": "good" | "improve", "tip": string, "explanation": string }[]
+  },
+  "content": {
+    "score": number,
+    "tips": { "type": "good" | "improve", "tip": string, "explanation": string }[]
+  },
+  "structure": {
+    "score": number,
+    "tips": { "type": "good" | "improve", "tip": string, "explanation": string }[]
+  },
+  "skills": {
+    "score": number,
+    "tips": { "type": "good" | "improve", "tip": string, "explanation": string }[]
+  }
+}
+
+All scores must be numbers between 0 and 100.
+If a section seems missing in the resume, still provide a score based on evaluation.
+
   Be thorough and detailed. Don't be afraid to point out any mistakes or areas for improvement.
   If there is a lot to improve, don't hesitate to give low scores. This is to help the user to improve their resume.
   If available, use the job description for the job user is applying to to give more detailed feedback.
@@ -244,5 +292,7 @@ export const prepareInstructions = ({
   The job title is: ${jobTitle}
   The job description is: ${jobDescription}
   Provide the feedback using the following format: ${AIResponseFormat}
-  Return the analysis as a JSON object, without any other text and without the backticks.
-  Do not include any other text or comments.`;
+  `;
+
+
+
