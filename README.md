@@ -12,7 +12,7 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
   </div>
 
-  <h3 align="center">AI Resume Analyzer</h3>
+  <h3 align="center">Analizador de CV con IA</h3>
 
   </div>
 
@@ -20,55 +20,60 @@
 
 ## 📋 <a name="table">Table of Contents</a>
 
-1. ✨ [Introduction](#introduction)
+1. ✨ [Introduccion](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
+3. 🔋 [Caracteristicas](#features)
 4. 🤸 [Quick Start](#quick-start)
 
 
-## <a name="introduction">✨ Introduction</a>
+## <a name="introduction">✨ Introduccion</a>
 
-Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Implement seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each listing—all wrapped in a clean, reusable UI.
+¡Crea un analizador de currículums con IA usando React, React Router y Puter.js! Implementa una autenticación fluida, sube y almacena currículums, y relaciona candidatos con ofertas de empleo mediante evaluaciones inteligentes con IA. Obtén comentarios personalizados y puntuaciones ATS adaptadas a cada oferta, todo ello en una interfaz de usuario limpia y reutilizable.
+
 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **[React](https://react.dev/)** is a popular open‑source JavaScript library for building user interfaces using reusable components and a virtual DOM, enabling efficient, dynamic single-page and native apps.
+- **[React](https://react.dev/)** Es una popular biblioteca JavaScript de código abierto para construir interfaces de usuario utilizando componentes reutilizables y un DOM virtual, lo que permite crear aplicaciones nativas y de una sola página eficientes y dinámicas.
 
-- **[React Router v7](https://reactrouter.com/)** is the go‑to routing library for React apps, offering nested routes, data loaders/actions, error boundaries, code splitting, and SSR support—all with a smooth upgrade path from v6.
 
-- **[Puter.com](https://jsm.dev/resumind-puter)** is an advanced, open-source internet operating system designed to be feature-rich, exceptionally fast, and highly extensible. Puter can be used as: A privacy-first personal cloud to keep all your files, apps, and games in one secure place, accessible from anywhere at any time.
+- **[React Router v7](https://reactrouter.com/)** Es la biblioteca de enrutamiento por excelencia para aplicaciones React, que ofrece rutas anidadas, cargadores/acciones de datos, límites de error, división de código y compatibilidad con SSR, todo ello con una ruta de actualización sencilla desde la versión 6.
 
-- **[Puter.js](https://jsm.dev/resumind-puterjs)** is a tiny client‑side SDK that adds serverless auth, storage, database, and AI (GPT, Claude, DALL·E, OCR…) straight into your browser app—no backend needed and costs borne by users.
+- **[Puter.com](https://jsm.dev/resumind-puter)** Es un sistema operativo de Internet avanzado y de código abierto, diseñado para ser completo, excepcionalmente rápido y altamente extensible. Computer se puede usar como: una nube personal que prioriza la privacidad para mantener todos tus archivos, aplicaciones y juegos en un lugar seguro, accesibles desde cualquier lugar y en cualquier momento.
+
+
+- **[Puter.js](https://jsm.dev/resumind-puterjs)** Es un pequeño SDK del lado del cliente que agrega autenticación sin servidor, almacenamiento, base de datos e IA (GPT, Claude, DALL·E, OCR…) directamente a su aplicación de navegador, sin necesidad de un backend y con los costos a cargo de los usuarios.
 
 - **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
 
-- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers, making it ideal for building large-scale applications.
-
-- **[Vite](https://vite.dev/)** is a fast build tool and dev server using native ES modules for instant startup, hot‑module replacement, and Rollup‑powered production builds—perfect for modern web development.
-
-- **[Zustand](https://github.com/pmndrs/zustand)** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
-
-## <a name="features">🔋 Features</a>
-
-👉 **Easy & convenient auth**: Handle authentication entirely in the browser using Puter.js—no backend or setup required.
-
-👉 **Resume upload & storage**: Let users upload and store all their resumes in one place, safely and reliably.
-
-👉 **AI resume matching**: Provide a job listing and get an ATS score with custom feedback tailored to each resume.
-
-👉 **Reusable, modern UI**: Built with clean, consistent components for a great-looking and maintainable interface.
-
-👉 **Code Reusability**: Leverage reusable components and a modular codebase for efficient development.
-
-👉 **Cross-Device Compatibility**: Fully responsive design that works seamlessly across all devices.
-
-👉 **Modern UI/UX**: Clean, responsive design built with Tailwind CSS and shadcn/ui for a sleek user experience.
-
-And many more, including code architecture and reusability.
+- **[TypeScript](https://www.typescriptlang.org/)** Es un superconjunto de JavaScript que añade tipado estático, lo que proporciona mejores herramientas, calidad de código y detección de errores para los desarrolladores, lo que lo hace ideal para crear aplicaciones a gran escala.
 
 
-## <a name="quick-start">🤸 Quick Start</a>
+- **[Vite](https://vite.dev/)** Es una herramienta de compilación rápida y un servidor de desarrollo que utiliza módulos ES nativos para un inicio instantáneo, reemplazo de módulos en caliente y compilaciones de producción con tecnología Rollup, perfecto para el desarrollo web moderno.
+
+
+- **[Zustand](https://github.com/pmndrs/zustand)** Es una biblioteca minimalista de gestión de estado basada en hooks para React. Permite gestionar el estado global sin código repetitivo, sin proveedores de contexto y con un rendimiento excelente gracias a las suscripciones de estado selectivas.
+
+## <a name="features">🔋 Caracteristicas</a>
+
+👉 **Autenticación fácil y práctica**: Gestiona la autenticación completamente en el navegador con Puter.js; no requiere backend ni configuración.
+
+👉 **Carga y almacenamiento de currículums**: Permite a los usuarios subir y almacenar todos sus currículums en un solo lugar, de forma segura y fiable.
+
+👉 **Análisis de currículums con IA**: Publica una oferta de empleo y obtén una puntuación ATS con comentarios personalizados para cada currículum.
+
+👉 **Interfaz de usuario moderna y reutilizable**: Diseñada con componentes limpios y consistentes para una interfaz atractiva y fácil de mantener.
+
+👉 **Reutilización de código**: Aprovecha los componentes reutilizables y una base de código modular para un desarrollo eficiente.
+
+👉 **Compatibilidad multidispositivo**: Diseño totalmente adaptable que funciona a la perfección en todos los dispositivos.
+
+👉 **Interfaz de usuario/experiencia de usuario moderna**: Diseño limpio y adaptable creado con Tailwind CSS y shadcn/ui para una experiencia de usuario fluida.
+
+Y muchas más, incluyendo la arquitectura del código y la reutilización.
+
+
+## <a name="quick-start">🤸 Inicio Rapido</a>
 
 Follow these steps to set up the project locally on your machine.
 
